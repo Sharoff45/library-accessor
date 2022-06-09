@@ -1,0 +1,36 @@
+{
+    "name": "sharoff45/library-accessor",
+    "type": "library",
+    "description": "Accessor library",
+    "license": "proprietary",
+    "autoload": {
+        "psr-4": {
+            "Sharoff45\\Library\\Accessor\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Sharoff45\\Library\\Accessor\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "preferred-install": {
+            "*": "dist"
+        },
+        "sort-packages": true,
+        "bin-dir": "bin",
+        "allow-plugins": {
+            "icanhazstring/composer-unused": true
+        }
+    },
+    "require": {
+        "php": ">=8.0",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "sharoff45/library-cs-fixer": "^1.0",
+        "sharoff45/library-phpstan-rules": "^1.0",
+        "icanhazstring/composer-unused": "^0.7.5",
+        "phpunit/phpunit": "^9.5"
+    }
+}
